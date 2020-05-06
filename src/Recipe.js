@@ -11,7 +11,6 @@ const recipe = ({ title, image, ingredients }) => {
         ))}
       </ul>
       <img src={image} alt=""></img>
-      <p>Rating: </p>
     </div>
   );
 };

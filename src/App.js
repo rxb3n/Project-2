@@ -38,7 +38,7 @@ const App = () => {
           <input
             className="search-bar"
             type="text"
-            placeholder="What do you eat?"
+            placeholder="What will you eat?"
             value={search}
             onChange={updateSearch}
           />
@@ -46,6 +46,9 @@ const App = () => {
             Search
           </button>
         </form>
+        <button className="holis" type="submit">
+          Holidays!
+        </button>
       </div>
       <div className="food">
         {recipes.map((recipe) => (
@@ -54,7 +57,6 @@ const App = () => {
             title={recipe.recipe.label}
             image={recipe.recipe.image}
             ingredients={recipe.recipe.ingredients}
-            rating={"rating"}
           />
         ))}
       </div>

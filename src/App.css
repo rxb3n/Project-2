@@ -1,6 +1,19 @@
+@font-face {
+  font-family: "Circus";
+  src: url("./fonts/TheCircousStriped.ttf");
+}
+
 .App {
+  font-family: "Circus";
   min-height: 100vh;
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background:
+    linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, black 25%, transparent 25%),
+    linear-gradient(45deg, black 25%, transparent 25%);
+  background-size: 2em 2em;
+  background-color: #232323;
+
 }
 
 .search-form {
@@ -25,6 +38,7 @@
 
 .food {
   padding-top: 100px;
+  color: white;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
